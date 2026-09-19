@@ -25,6 +25,12 @@ function MathOperations() {
     setResult(operations[operation](a, b));
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleCalculate();
+    }
+  };
+
   return (
     <div className="flex justify-center flex-col gap-2">
       <div className="flex  justify-center items-center gap-2">
@@ -32,6 +38,7 @@ function MathOperations() {
           type="number"
           value={num1}
           data-testid="num1"
+          onKeyDown={handleKeyDown}
           onChange={(e) => setNum1(e.target.value)}
           className="w-20 border border-gray-400 text-center py-0.5"
         />
@@ -51,6 +58,7 @@ function MathOperations() {
           type="number"
           value={num2}
           data-testid="num2"
+          onKeyDown={handleKeyDown}
           onChange={(e) => setNum2(e.target.value)}
           className="w-20 border border-gray-400 text-center py-0.5"
         />
