@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
 
-function UserProfile({ userId }) {
+function UserProfile() {
   const [user, setUser] = useState(null);
+  const [userID, setUserID] = useState(Math.floor(Math.random() * 10 + 1));
 
-  useEffect(() => {
-    setUser(null);
-    fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+  const fetchUser = () => {
+    if (!userID) return;
+    fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
       .then((res) => res.json())
       .then((data) => setUser(data));
-  }, [userId]);
+  };
 
   if (!user) {
+    fetchUser();
     return (
       <div className="flex items-center justify-center p-6">
         <div className="flex items-center gap-3 text-gray-500">
@@ -62,6 +64,12 @@ function UserProfile({ userId }) {
               ⌂
             </span>
             <span className="truncate text-gray-700">{user.address?.city}</span>
+          </div>
+          <div className="flex items-center gap-3 text-sm">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+              👤
+            </span>
+            <span className="truncate text-gray-700">ID - {userID}</span>
           </div>
         </div>
       </div>

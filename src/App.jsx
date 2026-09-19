@@ -8,8 +8,6 @@ import UserProfile from "./components/UserProfile";
 function App() {
   const [activeTab, setActiveTab] = useState("greeting");
 
-  const userID = Math.floor(Math.random() * 10 + 1); // Random user ID between 0 and 10
-
   const tabs = [
     {
       id: "greeting",
@@ -20,7 +18,7 @@ function App() {
     {
       id: "profile",
       label: "Profile",
-      component: <UserProfile userId={userID} />,
+      component: <UserProfile />,
     },
     { id: "math", label: "Calculate", component: <MathOperations /> },
   ];
