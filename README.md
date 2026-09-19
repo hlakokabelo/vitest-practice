@@ -1,8 +1,3 @@
-# Vitest-Practice
-
-Here's a README that fits what you've built:
-
-````markdown
 # React + Vitest Practice
 
 A small playground project for practicing component testing with **Vitest** and
@@ -35,7 +30,6 @@ npm run dev       # start dev server
 npm test          # run tests once
 npm run test:watch  # re-run on file changes
 ```
-````
 
 ## What I practiced
 
@@ -78,7 +72,6 @@ it("multiplies two numbers", async () => {
 - `data-testid` is a last resort, not a first choice
 - `act(() => result.current.decrement())` triggers updates to your components
 
-```
-
+``
 Swap in your actual repo name, and trim the "What I practiced" section to whatever you actually covered. If you mocked `fetch`, add a one-liner under "Notes to self" about `vi.mock` or `vi.spyOn(global, "fetch")`.
-```
+``
