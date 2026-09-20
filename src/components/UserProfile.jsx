@@ -30,7 +30,7 @@ function UserProfile() {
     .join("");
 
   return (
-    <div className="flex justify-center p-6">
+    <div className="flex justify-center">
       <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-200 transition hover:shadow-xl">
         <div className="flex items-center gap-4">
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-linear-to-br from-indigo-500 to-purple-600 text-lg font-semibold text-white shadow-md">

@@ -50,9 +50,7 @@ function App() {
         </div>
 
         {/* Active component */}
-        <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-200">
-          {active?.component}
-        </div>
+        {active?.component}
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ function MathOperations() {
   };
 
   return (
-    <div className="flex justify-center flex-col gap-2">
+    <div className="rounded-2xl bg-white p-6 pt-14 pb-14 shadow-lg ring-1 ring-gray-200">
       <div className="flex  justify-center items-center gap-2">
         <input
           type="number"
@@ -65,14 +65,14 @@ function MathOperations() {
 
         <button
           onClick={handleCalculate}
-          className="border cursor-pointer border-gray-400 px-2 py-0.5"
+          className="cursor-pointer border rounded-[5px] hover:bg-blue-300 border-gray-900 px-2 py-0.5"
         >
           =
         </button>
-      </div>
 
-      <div data-testid="result" className="flex justify-center">
-        Result: {result}
+        <div data-testid="result" className="flex justify-center pl-2">
+          {result}
+        </div>
       </div>
     </div>
   );

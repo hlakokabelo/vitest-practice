@@ -4,12 +4,14 @@ function Greeting({ name }) {
   const displayName = name || "World";
 
   return (
-    <div className="flex flex-col items-center gap-2 text-center">
-      <span className="text-3xl">👋</span>
-      <h1 className="text-2xl font-bold text-gray-800">
-        Hello, {displayName}!
-      </h1>
-      <p className="text-sm text-gray-500">Welcome back — good to see you.</p>
+    <div className="rounded-2xl pt-14 pb-14 bg-white p-6 shadow-lg ring-1 ring-gray-200">
+      <div className="flex flex-col items-center gap-2 text-center">
+        <span className="text-3xl">👋</span>
+        <h1 className="text-2xl font-bold text-gray-800">
+          Hello, {displayName}!
+        </h1>
+        <p className="text-sm text-gray-500">Welcome back — good to see you.</p>
+      </div>
     </div>
   );
 }
