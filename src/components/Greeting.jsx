@@ -1,5 +1,3 @@
-import React from "react";
-
 function Greeting({ name }) {
   const displayName = name || "World";
 

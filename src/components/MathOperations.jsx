@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import { useState } from "react";
 
 function MathOperations() {
   const [num1, setNum1] = useState(0);

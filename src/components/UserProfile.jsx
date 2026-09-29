@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
+const userID = Math.floor(Math.random() * 10 + 1);
 
 function UserProfile() {
   const [user, setUser] = useState(null);
-  const [userID, setUserID] = useState(Math.floor(Math.random() * 10 + 1));
 
   const fetchUser = () => {
     if (!userID) return;
