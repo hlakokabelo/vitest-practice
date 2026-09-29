@@ -12,7 +12,7 @@ function App() {
     {
       id: "greeting",
       label: "Greeting",
-      component: <Greeting name="your grace" />,
+      component: <Greeting name="gorgeous human" />,
     },
     { id: "counter", label: "Counter", component: <Counter /> },
     {
